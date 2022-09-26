@@ -11,6 +11,8 @@ function App() {
   };
 
   useEffect(() => {
+    setIsFavorite(true);
+
     fetch(url)
       .then((response) => response.json())
       .then((data) => setQuotes(data));
@@ -20,8 +22,7 @@ function App() {
     fetch(url)
       .then((response) => response.json())
       .then((data) => setQuotes(data));
-
-    setIsFavorite((prev) => !prev);
+    setIsFavorite(true);
   };
 
   const tweetQuote = () => {
