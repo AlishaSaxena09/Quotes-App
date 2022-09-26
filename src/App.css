@@ -36,3 +36,68 @@
     transform: rotate(360deg);
   }
 }
+
+/* */
+
+body {
+  background-image: url("../public/images/bg.jpg");
+  background-size: cover;
+}
+.quote-div {
+  opacity: 90%;
+  height: fit-content;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 600px;
+  margin: auto;
+  padding: 2rem;
+  background: #282828;
+  text-align: center;
+  color: white;
+}
+.quote {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.author {
+  font-size: 1.2rem;
+}
+.bottom {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+.new-quote {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+i {
+  font-size: 1.6rem;
+}
+.fav {
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-left: 0.5rem;
+}
+
+@media only screen and (max-width: 450px) {
+  .quote-div {
+    width: 200px;
+  }
+  .quote {
+    font-size: 1rem;
+  }
+  .author {
+    font-size: 1rem;
+  }
+}
